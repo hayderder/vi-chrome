@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #eaf6ff;
+            color: #333;
+        }
+
+        header {
+            background: #1e90ff;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            max-width: 50px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            gap: 0.5rem;
+            margin-left: 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            padding: 6rem 1rem 1rem;
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            text-align: left;
+        }
+
+        .about-container img {
+            flex: 0.5;
+            max-width: 150px;
+            height: auto;
+        }
+
+        .about-container p {
+            flex: 1;
+        }
+
+        #team h2 {
+             text-align: center;
+        }
+
+        .team {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .team-row {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            text-align: center;
+            max-width: 200px;
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        footer {
+            background: #1e90ff;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img src="companylogo2.jpg">
+            <h1>Company Name</h1>
+        </div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#team">Team</a>
+            <a href="#vi-chrome">Vi-Chrome</a>
+            <a href="#reviews">Reviews</a>
+        </nav>
+    </header>
+    <section class="section" id="about">
+        <h2>About Our Company</h2>
+        <div class="about-container">
+            <img src="companylogo.jpg" alt="About Us">
+            <p>VI-Chrome was established with one goal in mind : to reduce the suffering of those who are visually impaired. VI-Chrome was founded by 4 members who shared a singular goal. Once our team was established, we started thinking of our company branding. And that’s where we come up with the name VI-Chrome. The term VI in our company’s name stands for the “visually impaired” means that our company is focused and aims to achieve universal peace and sustainability for the visually impaired. “Chrome” refers to the colour that most people visually impaired see in their daily lives. Currently, our team consists of 5 people, covering all Cheif Officers works. Our past projects was Sensurr, a glass to help the Visually Impaired cross the road and we are currently working on developing an app that can act as a personal optometrist for the user.</p>
+        </div>
+    </section>
+    <section class="section" id="team">
+        <h2>Meet Our Team</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="ceo.jpg" alt="Team Member 1">
+                <p><strong>Muhammad Hayder</strong></p>
+                <p>CEO</p>
+            </div>
+            <div class="team-row">
+                <div class="team-member">
+                    <img src="coo.jpg" alt="Team Member 2">
+                    <p><strong>Aleesya Damia</strong></p>
+                    <p>COO</p>
+                </div>
+                <div class="team-member">
+                    <img src="cto.jpg" alt="Team Member 3">
+                    <p><strong>Anas Zakwan</strong></p>
+                    <p>CTO</p>
+                </div>
+                <div class="team-member">
+                    <img src="cmo.jpg" alt="Team Member 4">
+                    <p><strong>Zarif Halifa</strong></p>
+                    <p>CMO</p>
+                </div>
+                <div class="team-member">
+                    <img src="cfo.jpg" alt="Team Member 5">
+                    <p><strong>Yeoh Kai Jie</strong></p>
+                    <p>CFO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="vi-chrome">
+        <h2>Introducing Vi-Tester</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.</p>
+        <img src="vi-chrome-placeholder.png" alt="Vi-Chrome" style="max-width: 100%; height: auto;">
+    </section>
+    <section class="section" id="reviews">
+        <h2>Reviews</h2>
+        <p>Click below to read the full review.</p>
+        <div class="reviews">
+            <img src="review1-placeholder.png" alt="Review" onclick="window.open('review.html', '_blank')">
+        </div>
+    </section>
+    <footer>
+        <p>Contact Us: <br> 
+        Kolej Permata@Pintar Negara, UKM <br>
+        Phone: +60 16 925 0454 <br>
+        Email: vichroma@example.com</p>
+        <p><a href="#about">About Us</a> | <a href="#privacy-policy">Privacy Policy</a></p>
+        <p>Follow Us: 
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </p>
+        <p>&copy; 2024 Vi-Chrome. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>
